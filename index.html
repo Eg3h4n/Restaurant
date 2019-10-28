@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>BitRestaurant</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <style>
+      .card {
+        width: 115px;
+        margin: 5px;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="jumbotron">
+        <h1 class="text-center">Welcome to bitRestaurant!</h1>
+        <hr />
+        <div class="row">
+          <div class="col">
+            <h3 class="text-center">Total Customers</h3>
+            <h1 class="text-center">
+              <span class="badge badge-pill badge-primary" id="totalCustomers"
+                >0</span
+              >
+            </h1>
+          </div>
+          <div class="col">
+            <h3 class="text-center">Total Revenue</h3>
+            <h1 class="text-center">
+              <span class="badge badge-pill badge-primary" id="totalRevenue"
+                >0</span
+              >
+            </h1>
+          </div>
+          <div class="col">
+            <h3 class="text-center">Current Customers</h3>
+            <h1 class="text-center">
+              <span class="badge badge-pill badge-primary" id="currentCustomers"
+                >0</span
+              >
+            </h1>
+          </div>
+          <div class="col">
+            <h3 class="text-center">Waiting List</h3>
+            <h1 class="text-center">
+              <span class="badge badge-pill badge-primary" id="waitingList"
+                >0</span
+              >
+            </h1>
+          </div>
+        </div>
+        <hr />
+        <div class="row justify-content-center">
+          <button class="btn btn-lg btn-info" id="startStop">
+            Play / Pause
+          </button>
+        </div>
+        <div>
+          <hr />
+          <div class="card-deck justify-content-center">
+            <div class="row">
+              <div class="card" id="table1">
+                <div class="card-body">
+                  <h5 class="card-title text-center">Table 1</h5>
+                  <p class="card-text text-center">
+                    0
+                  </p>
+                </div>
+              </div>
+              <div class="card" id="table2">
+                <div class="card-body">
+                  <h5 class="card-title text-center">Table 2</h5>
+                  <p class="card-text text-center">
+                    0
+                  </p>
+                </div>
+              </div>
+              <div class="card" id="table3">
+                <div class="card-body">
+                  <h5 class="card-title text-center">Table 3</h5>
+                  <p class="card-text text-center">
+                    0
+                  </p>
+                </div>
+              </div>
+              <div class="card" id="table4">
+                <div class="card-body">
+                  <h5 class="card-title text-center">Table 4</h5>
+                  <p class="card-text text-center">
+                    0
+                  </p>
+                </div>
+              </div>
+              <div class="card" id="table5">
+                <div class="card-body">
+                  <h5 class="card-title text-center">Table 5</h5>
+                  <p class="card-text text-center">
+                    0
+                  </p>
+                </div>
+              </div>
+              <div class="card" id="table6">
+                <div class="card-body">
+                  <h5 class="card-title text-center">Table 6</h5>
+                  <p class="card-text text-center">
+                    0
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="card" id="table7">
+                <div class="card-body">
+                  <h5 class="card-title text-center">Table 7</h5>
+                  <p class="card-text text-center">
+                    0
+                  </p>
+                </div>
+              </div>
+              <div class="card" id="table8">
+                <div class="card-body">
+                  <h5 class="card-title text-center">Table 8</h5>
+                  <p class="card-text text-center">
+                    0
+                  </p>
+                </div>
+              </div>
+              <div class="card" id="table9">
+                <div class="card-body">
+                  <h5 class="card-title text-center">Table 9</h5>
+                  <p class="card-text text-center">
+                    0
+                  </p>
+                </div>
+              </div>
+              <div class="card" id="table10">
+                <div class="card-body">
+                  <h5 class="card-title text-center">Table 10</h5>
+                  <p class="card-text text-center">
+                    0
+                  </p>
+                </div>
+              </div>
+              <div class="card" id="table11">
+                <div class="card-body">
+                  <h5 class="card-title text-center">Table 11</h5>
+                  <p class="card-text text-center">
+                    0
+                  </p>
+                </div>
+              </div>
+              <div class="card" id="table12">
+                <div class="card-body">
+                  <h5 class="card-title text-center">Table 12</h5>
+                  <p class="card-text text-center">
+                    0
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="card" id="table13">
+                <div class="card-body">
+                  <h5 class="card-title text-center">Table 13</h5>
+                  <p class="card-text text-center">
+                    0
+                  </p>
+                </div>
+              </div>
+              <div class="card" id="table14">
+                <div class="card-body">
+                  <h5 class="card-title text-center">Table 14</h5>
+                  <p class="card-text text-center">
+                    0
+                  </p>
+                </div>
+              </div>
+              <div class="card" id="table15">
+                <div class="card-body">
+                  <h5 class="card-title text-center">Table 15</h5>
+                  <p class="card-text text-center">
+                    0
+                  </p>
+                </div>
+              </div>
+              <div class="card" id="table16">
+                <div class="card-body">
+                  <h5 class="card-title text-center">Table 16</h5>
+                  <p class="card-text text-center">
+                    0
+                  </p>
+                </div>
+              </div>
+              <div class="card" id="table17">
+                <div class="card-body">
+                  <h5 class="card-title text-center">Table 17</h5>
+                  <p class="card-text text-center">
+                    0
+                  </p>
+                </div>
+              </div>
+              <div class="card" id="table18">
+                <div class="card-body">
+                  <h5 class="card-title text-center">Table 18</h5>
+                  <p class="card-text text-center">
+                    0
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="index.js"></script>
+  </body>
+</html>
